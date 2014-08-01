@@ -3,4 +3,6 @@
 var/data/
 var/log/
 
+# Ignore third-party packages
+node_modules/
 
