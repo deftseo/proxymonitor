@@ -1,0 +1,6 @@
+
+# Ignore transient var
+var/data/
+var/log/
+
+
