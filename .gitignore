@@ -1,4 +1,7 @@
 
+# Ignore editing backups
+*.swp
+
 # Ignore transient var
 var/data/
 var/log/
