@@ -16,6 +16,7 @@
         "url": "https://github.com/deftseo/proxymonitor"
     },
     "dependencies": {
-        "my-ip": ">=1.0.0"
+        "my-ip": ">=1.0.0",
+        "sqlite3": ">=2.2.0"
     }
 }
