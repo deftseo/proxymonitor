@@ -18,5 +18,6 @@
     "dependencies": {
         "my-ip": ">=1.0.0",
         "sqlite3": ">=2.2.0"
-    }
+    },
+    "engine": "node >= 0.10.0"
 }
