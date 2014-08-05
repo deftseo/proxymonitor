@@ -12,7 +12,7 @@ var inStream   = fs.createReadStream(inputFile),
     proxySave  = proxystore.proxySaver();
 
 // Connecting the streams.
-// inStream -> lineChunk -> proxyParse -> proxyDump
+// inStream -> lineChunk -> proxyParse -> proxySave
 inStream
     .pipe(lineChunk)
     .pipe(proxyParse)

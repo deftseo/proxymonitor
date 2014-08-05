@@ -3,7 +3,6 @@ var fs         = require('fs'),
     proxystore = require('../lib/proxystore'),
     dataDir    = './var/incoming/',
     inputFile  = dataDir + 'test-list.txt';
-    //inputFile  = '/home/seo/tmp/elite-1.txt';
 
 
 // Set up each pipe Transform
@@ -14,7 +13,7 @@ var inStream   = fs.createReadStream(inputFile),
     proxySave  = proxystore.proxySaver();
 
 // Connecting the streams.
-// inStream -> lineChunk -> proxyParse -> proxyDump
+// inStream -> lineChunk -> proxyParse -> country Lookup -> proxy Save
 inStream
     .pipe(lineChunk)
     .pipe(proxyParse)
