@@ -22,9 +22,8 @@ inStream
     .on('finish', function() {
         console.log('Finished streaming');
 
-        var dbDump = proxystore.dump();
-        console.log("ProxyDB:", dbDump);
-
-        console.log("ProxyStore:", proxystore.length(), "proxies stored");
+        proxystore.length(function(length) {
+            console.log('ProxyStore:', length, 'proxies stored');
+        });
     });
 
