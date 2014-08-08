@@ -7,10 +7,13 @@ var proxystore = require('./lib/proxystore'),
 function testProxy(proxy, done) {
     var checker;
 
-    console.log('Test Proxy', proxy.ipAddress + ':' + proxy.port);
+    console.log('Testing', proxy.ipAddress + ':' + proxy.port);
     proxycheck.checkProxy(proxy, function(proxyTest, status, message) {
+        var now = (new Date()).toJSON();
+
         if (!proxy.testResult) {
             proxy.testResult = status;
+            proxy.testDate   = now;
             proxystore.updateTestResult(proxy, done);
         }
     });
