@@ -5,6 +5,13 @@ var fs         = require('fs'),
     inputFile  = dataDir + 'test-list.txt';
 
 
+if (process.argv.length > 2) {
+    if (fs.existsSync(process.argv[2])) {
+        inputFile = process.argv[2];
+        console.log('Input file', inputFile);
+    }
+}
+
 
 var util   = require('util'),
     stream = require('stream');
