@@ -5,6 +5,7 @@
 # Ignore transient var
 var/data/
 var/log/
+tmp/
 
 # Ignore third-party packages
 node_modules/
