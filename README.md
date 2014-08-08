@@ -1,5 +1,26 @@
 proxymonitor
 ============
 
-Requires NodeJs 0.10.0 or above. (Uses streams).
+Requires NodeJs 0.10.0 or above. (Uses streams). Uses SQLite for a proxy datasource.
+
+
+## Install
+
+    git clone git@github.com:deftseo/proxymonitor.git
+    cd proxymonitor
+    make install
+
+
+## Import Proxy servers
+
+Create a list of proxy servers in a text file, one proxy server per line.
+
+    node proxyimport.js PATH_TO_FILE
+
+
+## Check proxy servers
+
+    node proxycheck.js
+
+
 
