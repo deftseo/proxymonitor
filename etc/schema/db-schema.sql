@@ -4,21 +4,22 @@
 --
 
 CREATE TABLE IF NOT EXISTS `proxy` (
-    id          INTEGER PRIMARY KEY AUTOINCREMENT,
-    ipAddress   VARCHAR(15),
-    port        INTEGER,
-    country     VARCHAR(32),
-    status      VARCHAR(1),
+    id              INTEGER PRIMARY KEY AUTOINCREMENT,
+    ipAddress       VARCHAR(15),
+    port            INTEGER,
+    country         VARCHAR(32),
+    status          VARCHAR(1),
 
-    dateAdded   DATETIME,
-    dateUpdated DATETIME,
+    dateAdded       DATETIME,
+    dateUpdated     DATETIME,
 
-    testHistory VARCHAR(255),
+    testHistory     VARCHAR(255),
 
-    testCount   INTEGER,
-    totalPass   INTEGER,
-    totalFail   INTEGER,
-    totalError  INTEGER,
+    testCount       INTEGER,
+    totalPass       INTEGER,
+    totalFail       INTEGER,
+    totalError      INTEGER,
+    totalTimeout    INTEGER,
 
     UNIQUE (ipAddress, port)
 );
