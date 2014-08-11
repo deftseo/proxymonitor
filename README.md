@@ -22,5 +22,10 @@ Create a list of proxy servers in a text file, one proxy server per line.
 
     node proxycheck.js
 
+## Export freshly working proxy servers
+
+    node proxyexport.js
+
+Currently returns list of fresh proxies in the UK (plus Crown dependencies) and Ireland.
 
 
