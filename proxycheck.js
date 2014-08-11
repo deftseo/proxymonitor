@@ -22,7 +22,7 @@ function testProxy(proxy, done) {
 schedule = scheduler.Scheduler(testProxy);
 
 
-proxystore.iterate(function(proxy) {
+proxystore.iterate('allNotCN', function(proxy) {
     if (proxy) {
         schedule.add(proxy);
     } else {
