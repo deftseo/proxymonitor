@@ -2,7 +2,11 @@
     "name": "proxymonitor",
     "version": "0.1.0",
     "description": "Identifies and monitors elite proxies",
-    "keywords": ["proxy", "http", "anonymous"],
+    "keywords": [
+        "proxy",
+        "http",
+        "anonymous"
+    ],
     "homepage": "https://github.com/deftseo/proxymonitor",
     "license": "GPL-3.0",
     "author": {
