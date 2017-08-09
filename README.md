@@ -13,7 +13,7 @@ Requires NodeJs 0.10.0 or above. (Uses streams). Uses SQLite for a proxy datasou
 
 ## Import Proxy servers
 
-Create a list of proxy servers in a text file, one proxy server per line, in the format <IP_ADDRESS>:<PORT>
+Create a list of proxy servers in a text file, one proxy server per line, in the format IP_ADDRESS:PORT
 
     node proxyimport.js PATH_TO_FILE
 
