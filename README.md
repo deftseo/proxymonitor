@@ -13,7 +13,7 @@ Requires NodeJs 0.10.0 or above. (Uses streams). Uses SQLite for a proxy datasou
 
 ## Import Proxy servers
 
-Create a list of proxy servers in a text file, one proxy server per line.
+Create a list of proxy servers in a text file, one proxy server per line, in the format <IP_ADDRESS>:<PORT>
 
     node proxyimport.js PATH_TO_FILE
 
@@ -26,6 +26,6 @@ Create a list of proxy servers in a text file, one proxy server per line.
 
     node proxyexport.js
 
-Currently returns list of fresh proxies in the UK (plus Crown dependencies) and Ireland.
+Currently returns list of fresh proxies in the UK (plus Crown dependencies) and Ireland. The minimum requirement is 4 consecutive passes.
 
 
