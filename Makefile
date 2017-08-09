@@ -7,15 +7,17 @@ SCHEMAFILE = $(BASE_DIR)/etc/schema/db-schema.sql
 install: init-packages init-proxystore
 
 
-init-packages: ./node_modules/
+init-packages: node_modules/
 	
-node-modules/:
+node_modules/:
 	npm install
 
 
 init-proxystore: $(DATASOURCE)
 
-$(DATASOURCE):
+$(DATASOURCE): $(DATA_DIR)
 	sqlite3 $(DATASOURCE) < $(SCHEMAFILE)
 
+$(DATA_DIR):
+	mkdir -p $(DATA_DIR)
 
